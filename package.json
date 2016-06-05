@@ -1,0 +1,19 @@
+{
+  "name": "headers",
+  "version": "1.0.0",
+  "description": "Retrieves browser headers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "headers",
+    "browser headers"
+  ],
+  "author": "Alec Burgdorf",
+  "email": "aeburgd@gmail.com",
+  "license": "ISC"
+  "engines": {
+    "node": "4.4.5"
+  }
+}
