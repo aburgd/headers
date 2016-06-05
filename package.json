@@ -8,12 +8,16 @@
   },
   "keywords": [
     "headers",
-    "browser headers"
+    "browser-headers"
   ],
   "author": "Alec Burgdorf",
   "email": "aeburgd@gmail.com",
-  "license": "ISC"
+  "license": "ISC",
   "engines": {
     "node": "4.4.5"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "locale": "0.0.21"
   }
 }
