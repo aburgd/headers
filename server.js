@@ -1,15 +1,16 @@
 var express = require("express"),
-    locale = require("locale")
+    locale = require("locale"),
+    useragent = require("express-useragent")
 
 var app = express()
 var port = process.env.PORT || 3500
 
 app.set('port', port)
 
-app.get('/', function(req, res) {
+app.get('/', useragent.express(), (req, res) => {
   var language = req.headers["accept-language"]
-  var ip = req.headers["x-forwarded-for"] || req.ip;
-  var os = process.platform
+  var ip = req.headers["x-forwarded-for"] || req.ip
+  var os = req.useragent.os
   
   res.send({
     'language': language,
