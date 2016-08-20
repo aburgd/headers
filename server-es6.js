@@ -1,9 +1,9 @@
-var express = require('express')
-// var locale = require('locale')
-var useragent = require('express-useragent')
+const express = require('express')
+// const locale = require('locale')
+const useragent = require('useragent')
 
-var app = express()
-var port = process.env.PORT || 3500
+const app = express()
+const port = process.env.PORT || 3500
 
 app.set('port', port)
 
@@ -19,6 +19,6 @@ app.get('/', useragent.express(), (req, res) => {
   })
 })
 
-app.listen(port, function (port) {
+app.listen(port, (port) => {
   console.log('Server is listening on: ${port}')
 })
